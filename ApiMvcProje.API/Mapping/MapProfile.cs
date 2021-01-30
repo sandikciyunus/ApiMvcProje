@@ -14,6 +14,9 @@ namespace ApiMvcProje.API.Mapping
         {
             CreateMap<Category, CategoryDTO>();
             CreateMap<CategoryDTO, Category>();
+
+            CreateMap<Product, ProductDTO>();
+            CreateMap<ProductDTO, Product>();
         }
     }
 }
