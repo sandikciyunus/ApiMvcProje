@@ -1,5 +1,6 @@
 ﻿using ApiMvcProje.Business.Abstract;
 using ApiMvcProje.Dto.Concrete;
+using ApiMvcProje.Entities.Concrete;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -32,6 +33,28 @@ namespace ApiMvcProje.API.Controllers
         public IActionResult GetById(int id)
         {
             return Ok(_mapper.Map<ProductDTO>(_productService.GetById(id)));
+        }
+
+        [HttpPost]
+        public IActionResult AddProduct(ProductDTO productDTO)
+        {
+            _productService.Add(_mapper.Map<Product>(productDTO));
+            return Created("", "Ürün başarıyla eklendi");
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateProduct(ProductDTO productDTO)
+        {
+            _productService.Update(_mapper.Map<Product>(productDTO));
+            return Ok("Ürün başarıyla güncellendi");
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteProduct(int id)
+        {
+            var product = _productService.GetById(id);
+            _productService.Delete(product);
+            return Ok("Ürün başarıyla silindi");
         }
 
     }
