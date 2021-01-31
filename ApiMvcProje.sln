@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMvcProje.Core", "ApiMvcP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMvcProje.DataAccess", "ApiMvcProje.DataAccess\ApiMvcProje.DataAccess.csproj", "{85D1C755-163D-4DD9-9124-A25B2F207B53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMvcProje.Dto", "ApiMvcProje.Dto\ApiMvcProje.Dto.csproj", "{4497F30D-4E4D-4AEC-AF03-56F8B218E96B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMvcProje.Dto", "ApiMvcProje.Dto\ApiMvcProje.Dto.csproj", "{4497F30D-4E4D-4AEC-AF03-56F8B218E96B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMvcProje.WebUI", "ApiMvcProje.WebUI\ApiMvcProje.WebUI.csproj", "{14FDD13A-4367-4413-B39F-E21F891F89EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{4497F30D-4E4D-4AEC-AF03-56F8B218E96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4497F30D-4E4D-4AEC-AF03-56F8B218E96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4497F30D-4E4D-4AEC-AF03-56F8B218E96B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FDD13A-4367-4413-B39F-E21F891F89EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FDD13A-4367-4413-B39F-E21F891F89EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FDD13A-4367-4413-B39F-E21F891F89EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FDD13A-4367-4413-B39F-E21F891F89EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
