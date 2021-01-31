@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ApiMvcProje.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class PersonController : ControllerBase
     {
@@ -22,6 +22,12 @@ namespace ApiMvcProje.API.Controllers
         public IActionResult GetAll()
         {
             return Ok(_personService.GetList());
+        }
+
+        [HttpGet("{s}")]
+        public IActionResult SearchPerson(string s)
+        {
+            return Ok(_personService.SearchPerson(s));
         }
     }
 }

@@ -23,5 +23,10 @@ namespace ApiMvcProje.Business.Concrete
         {
             return _personDal.GetList();
         }
+
+        public IList<Person> SearchPerson(string s)
+        {
+            return _personDal.SearchPerson(s);
+        }
     }
 }

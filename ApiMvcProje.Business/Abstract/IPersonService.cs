@@ -8,6 +8,7 @@ namespace ApiMvcProje.Business.Abstract
     public interface IPersonService
     {
         IList<Person> GetList();
+        IList<Person> SearchPerson(string s);
         void Add(Person person);
     }
 }

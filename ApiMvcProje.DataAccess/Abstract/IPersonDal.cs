@@ -8,5 +8,6 @@ namespace ApiMvcProje.DataAccess.Abstract
 {
     public interface IPersonDal:IEntityRepository<Person>
     {
+        IList<Person> SearchPerson(string s);
     }
 }
