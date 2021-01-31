@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiMvcProje.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210131094705_AddTablePersons")]
+    [Migration("20210131095312_AddTablePersons")]
     partial class AddTablePersons
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,10 +48,12 @@ namespace ApiMvcProje.DataAccess.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
 
                     b.Property<string>("Surname")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
 
                     b.HasKey("Id");
 
