@@ -21,5 +21,6 @@ namespace ApiMvcProje.DataAccess.Concrete
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Person> Persons { get; set; }
     }
 }
