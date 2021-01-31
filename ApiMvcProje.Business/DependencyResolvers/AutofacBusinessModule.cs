@@ -17,7 +17,10 @@ namespace ApiMvcProje.Business.DependencyResolvers
             builder.RegisterType<ProductService>().As<IProductService>();
 
             builder.RegisterType<EfCategoryDal>().As<ICategoryDal>();
-            builder.RegisterType<CategoryService>().As<ICategoryService>();
+            builder.RegisterType<CategoryService>().As<ICategoryService>(); 
+            
+            builder.RegisterType<EfPersonDal>().As<IPersonDal>();
+            builder.RegisterType<PersonService>().As<IPersonService>();
         }
     }
 }
